@@ -1,0 +1,60 @@
+Week 1 Summary:
+>Machine Learning (ML) is a process of extracting patterns from data, you have
+features (attributes of an object), target (attribute to find out for unseen objects)
+->Supervised Machine Learning (SML) there are always labels associated with
+features, the model is trained using certain features (made of observations
+and features) and targets (a vector with the target information you want to predict)
+The goal is to obtain a function 'g' that takes 'X' as a parameter and makes
+predictions as close as possible to the targets in 'y', where: g is the model,
+X the feature matrix and y the target values, obtaining g is called training
+>CRISP-DM
+Understanding:
+Business, Do you need ML for the project?, Project goal has to be measurable.
+Data, Are data sources reliable?, Do you need more data?, What data is suitable
+to measure your goal?
+Data preparation: Clean, format, organize, structure your data.
+Modeling: Train different models, compare your results and choose the best model
+Evaluate: Measure the performance of selected model, Does it accomplish your goal?
+Deploy: Make it available to all users, evaluate your deployment, based on
+your results decide which features are required or not, if data presents issues 
+fix them
+Iteration: Start simple, learn from feedback (evaluation-deployment), improve (iterate)
+>Choosing and training a model
+The context or nature of your goal yields the model selection, more than one
+model can help accomplish your goal but only one suits what you want to accomplish
+Multiple Comparisons problem (MCP): By chance any model can be 'lucky' and obtain
+close predictions because all models are probabilistic. To obtain the best model
+use a training and validation datasets then use a test dataset to verify if proposed
+model is suitable to accomplish your goal
+>Numpy
+https://jakevdp.github.io/PythonDataScienceHandbook/
+I am checking this handbook it covers numpy, pandas, matplotlib and some ML
+>Linear Algebra Refresher
+    https://www.youtube.com/watch?v=j1K84DGx2cI
+    https://www.youtube.com/watch?v=Ncu9Pks3AJQ&list=PLGqzsq0erqU7w7ZrTZ-pWWk4-AOkiGEGp
+    https://github.com/weijie-chen/Linear-Algebra-With-Python/tree/master/notebooks
+I have been going through some videos and the notebook, this takes time,
+I find the notebook amazing, wish I had the chance to learn this way when I was a student
+
+References for the homework, essential python knowledge is recommended
+but not strictly required as you can search for examples as you go may take time
+    > pandas
+        > read_csv, https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html#pandas.read_csv
+        > shape, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.shape.html#pandas.DataFrame.shape
+        > unique, https://pandas.pydata.org/docs/reference/api/pandas.Series.unique.html#pandas.Series.unique
+        > isnull, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.isnull.html#pandas.DataFrame.isnull
+        > sum, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sum.html#pandas.DataFrame.sum
+        > max, https://pandas.pydata.org/docs/reference/api/pandas.Series.max.html#pandas.Series.max
+        > median, https://pandas.pydata.org/docs/reference/api/pandas.Series.median.html#pandas.Series.median
+        > mode, https://pandas.pydata.org/docs/reference/api/pandas.Series.mode.html#pandas.Series.mode
+        > data filtering, https://pandas.pydata.org/docs/getting_started/intro_tutorials/03_subset_data.html
+        > fillna, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.fillna.html#pandas.DataFrame.fillna
+        > to_numpy, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_numpy.html#pandas.DataFrame.to_numpy
+        > T, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.T.html#pandas.DataFrame.T
+    
+    > numpy
+        > inv, https://numpy.org/doc/2.2/reference/generated/numpy.linalg.inv.html#numpy.linalg.inv
+        > dot, https://numpy.org/doc/2.2/reference/generated/numpy.dot.html#numpy.dot
+    
+    > others
+        > statology (g8 site), https://www.statology.org/pandas-filter-multiple-conditions/
