@@ -7,9 +7,9 @@ First unzip the data.zip file this is going to create a folder called data at th
 If you have a gpu available, to use it you have to review commands for:
 
 • Install cuda compiler (system wide):
-    • sudo apt install nvidia-cuda-toolkit
+  • sudo apt install nvidia-cuda-toolkit
   
 • Install pytorch (on your virtual environment):
-    • pip install torch
-    • pip install torchsummary
-    • pip install torchvision
+  • pip install torch
+  • pip install torchsummary
+  • pip install torchvision
