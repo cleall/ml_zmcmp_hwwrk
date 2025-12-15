@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: subscription
+  labels:
+    app: subscription
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: subscription
+  template:
+    metadata:
+      labels:
+        app: subscription
+    spec:
+      containers:
+      - name: subscription
+        image: hw10_lead_scoring:latest
+        imagePullPolicy: Never
+        resources:
+          requests:
+            memory: "384Mi"
+            cpu: "384m"
+          limits:
+            memory: "568Mi"
+            cpu: "568m"
+        ports:
+        - containerPort: 4444
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 4444
+          initialDelaySeconds: 8
+          periodSeconds: 8
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 4444
+          initialDelaySeconds: 3
+          periodSeconds: 3
